@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/drupalnettracker/public_html/repo/
+    - /bin/cp -R * $DEPLOYPATH
