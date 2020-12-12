@@ -1,0 +1,17 @@
+{% for key, item in items %}
+  {% set img = file_url(item.content['#field_collection_item'].field_member_image.entity.fileuri) %}
+  	<div>
+	  	<span class="thumb-info thumb-info-no-zoom thumb-info-no-borders mb-xl">
+		    <span class="thumb-info-side-image-wrapper p-none">
+		    	<img src="{{ img }}" class="img-responsive" alt="">
+		    </span>
+		    <span class="thumb-info-caption">
+		     	<span class="thumb-info-caption-text thumb-info-caption-text-custom center">
+			        <h4 class="mb-none mt-xs heading-dark">{{ item.content['#field_collection_item'].field_member_name.value }}</h4>
+			        <p class="font-size-md p-none m-none mb-sm">{{ item.content['#field_collection_item'].field_member_position.value }}</p>
+		      	</span>
+		    </span>
+	 	</span>
+	</div>
+{% endfor %}
+

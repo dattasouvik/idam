@@ -1,0 +1,23 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  <section class="section section-tertiary section-no-border match-height mt-none">
+    <div class="row">
+      <div class="col-half-section">
+       <div class="center">
+          {{ content.body }}
+        </div>
+        <div class="owl-carousel owl-theme show-nav-title mt-xlg mb-none" data-plugin-options='{"responsive": {"0": {"items": 1}, "479": {"items": 1}, "768": {"items": 2}, "979": {"items": 2}, "1199": {"items": 2}}, "margin": 10, "loop": false, "nav": true, "dots": false}'>
+          {{content.field_our_team}}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ title_suffix }}
+</div>

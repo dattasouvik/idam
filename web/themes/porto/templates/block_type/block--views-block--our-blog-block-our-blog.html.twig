@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+	<section class="section section-quaternary section-no-border match-height mt-none" style="min-height: 625px;">
+		<div class="row">
+			<div class="col-half-section col-half-section-right">
+				{{ content }}
+			</div>
+		</div>
+	</section>
+  {{ title_suffix }}
+</div>

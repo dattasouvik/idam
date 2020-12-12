@@ -1,0 +1,23 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  <section class="section section-background section-center" style="background-image: url({{ content.field_tes_image | render | striptags | trim }}); background-position: 50% 100%; min-height: 615px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <hr class="custom-divider">
+          <div class="owl-carousel owl-theme nav-bottom rounded-nav" data-plugin-options='{"items": 1, "loop": false}'>
+            {{ content. field_testimonials }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ title_suffix }}
+</div>

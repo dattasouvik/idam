@@ -1,0 +1,28 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  <section id="menu" style="background-image: url({{ content.field_background | render | striptags | trim }}); background-position: 50% 100%; background-repeat: no-repeat;">
+    <div class="container">
+      <div class="row mt-xlg">
+        <div class="col-md-12 center">
+          {{ content.body }}
+          <ul class="special-menu pb-xlg">
+          {{content.field_special_menu}}
+        </ul>
+        </div>
+      </div>
+      <div class="row mb-xlg mt-xl">
+        <div class="col-md-12 center">
+          <a href="{{ content.field_links | render | striptags | trim }}" class="btn btn-primary btn-lg mt-xlg mb-xlg">{{ content.field_full_menu | render | striptags | trim }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ title_suffix }}
+</div>

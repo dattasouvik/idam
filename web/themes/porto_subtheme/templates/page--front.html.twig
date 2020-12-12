@@ -1,0 +1,31 @@
+<div class="d-flex flex-column min-vh-100" {% if language == 'ar' %} dir="rtl" {% endif %}>
+
+ <div class="wrap">
+ 
+	{% if page.header %}
+	<!-- Header Start -->
+	<header class="w-100 header">
+		{{ page.header }}
+	</header>
+     <!-- Header End --> 
+	{% endif %}
+	
+	<div class="load-title">
+		<h1><img src="/idam/web/themes/porto_subtheme/assets/images/logo.png" alt="MIA"></h1>
+	</div>	
+
+	<section id="slider">
+
+		<div class="vegas vegas_Slider">
+
+		</div>
+
+	</section>
+
+    {{ page.content }}
+
+    {{ page.footer_top }}
+
+ </div>
+
+</div>

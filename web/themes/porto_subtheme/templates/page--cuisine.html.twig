@@ -1,0 +1,25 @@
+<div class="d-flex flex-column min-vh-100" {% if language == 'ar' %} dir="rtl" {% endif %}>
+
+ <div class="wrap">
+ 
+	{% if page.header %}
+	<!-- Header Start -->
+	<header class="w-100 header">
+		{{ page.header }}
+	</header>
+     <!-- Header End --> 
+	{% endif %}
+	
+	{% if page.cuisine_content %}
+		<article class="underWrap">
+		{{ page.cuisine_content }}
+		</article>
+	{% endif %}
+	
+	{% if page.footer_top %}
+		{{ page.footer_top }}
+	{% endif %}
+
+ </div>
+
+</div>

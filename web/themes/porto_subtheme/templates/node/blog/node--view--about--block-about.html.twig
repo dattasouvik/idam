@@ -1,0 +1,12 @@
+<h2>{{label}}</h2>
+
+<p class="lead mb-xl mt-lg">
+    {% set conBody %}
+        {{ content.body['#object'].body.summary }}
+      {% endset %}  
+    {{ conBody|striptags }}
+</p>
+
+<img width="205" class="img-responsive pull-left mr-xl mb-xl mt-xs" alt="" src="{{ file_url(node.field_image.entity.fileuri) }}">
+
+{{ content.body }}

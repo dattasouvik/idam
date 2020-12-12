@@ -1,0 +1,9 @@
+{% for key, item in items %}
+  {% set img = file_url(item.content['#field_collection_item'].field_sm_image.entity.fileuri) %}
+  	<li>
+		<img src="{{img}}" class="img-responsive" alt="">
+		<h3 class="special">{{ item.content['#field_collection_item'].field_sm_day.value }}</h3>
+		<p><span>{{ item.content['#field_collection_item'].field_sm_description.value }}</span></p>
+		<strong class="special-menu-price text-color-dark">{{ item.content['#field_collection_item'].field_sm_price.value }}</strong>
+	</li>
+{% endfor %}

@@ -1,0 +1,5 @@
+{% for key, item in items %}
+<li class="tab_title">
+	<a href="{{ item.content['#field_collection_item'].field_id.value }}" data-toggle="tab">{{ item.content['#field_collection_item'].field_title.value }}</a>
+</li>					
+{% endfor %}

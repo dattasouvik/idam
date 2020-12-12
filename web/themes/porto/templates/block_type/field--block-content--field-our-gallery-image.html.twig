@@ -1,0 +1,15 @@
+{% for key, item in items %}
+{% set img = file_url(item.content['#field_collection_item'].field_gallery_image.entity.fileuri) %}
+	<div class="masonry-item">
+		<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+			<span class="thumb-info-wrapper">
+				<img src="{{ img }}" class="img-responsive" alt="">
+				<span class="thumb-info-action thumb-info-action-custom">
+					<a href="{{ img }}">
+						<span class="thumb-info-icon-custom"></span>
+					</a>
+				</span>
+			</span>
+		</span>
+	</div>							
+{% endfor %}

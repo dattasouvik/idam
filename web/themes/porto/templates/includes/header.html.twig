@@ -1,0 +1,45 @@
+<header id="header" class="header-narrow" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": false}'>
+	<div class="header-body">
+		<div class="header-top header-top-secondary header-top-style-3">
+			<div class="container">
+				{% if page.nav_top %}
+				<nav class="header-nav-top pull-right">
+					{{page.nav_top}}
+				</nav>
+				{% endif %}
+				{% if page.slogan_top%}
+				<div class="hidden-xs text-color-tertiary">
+					{{page.slogan_top}}
+				</div>
+				{% endif %}
+			</div>
+		</div>
+		<div class="header-container container">
+			<div class="header-row">
+				{% if logopath %}
+				<div class="header-column">
+					<div class="header-logo">
+						<a href="{{ front_page }}">
+							<img alt="Porto" width="164" height="55" src="{{ logopath }}">
+						</a>
+					</div>
+				</div>
+				{% endif %}
+				<div class="header-column">
+					<div class="header-row">
+						<div class="header-nav">
+							<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+								<i class="fa fa-bars"></i>
+							</button>
+							{% if page.main_navigaton %}
+							<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+								{{page.main_navigaton}}
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

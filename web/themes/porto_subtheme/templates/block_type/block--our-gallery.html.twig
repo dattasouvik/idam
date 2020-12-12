@@ -1,0 +1,27 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  <section class="p-xlg">
+    <div class="container">
+      <div class="row mb-xlg">
+        <div class="col-md-12 center">
+          {{ content.body }}
+          <div class="lightbox" data-plugin-options='{"delegate": "a", "type": "image", "gallery": {"enabled": true}}'>
+            <div class="masonry-loader masonry-loader-showing">
+              <div class="masonry" data-plugin-masonry data-plugin-options='{"itemSelector": ".masonry-item"}'>
+                {{content.field_our_gallery_image}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ title_suffix }}
+</div>

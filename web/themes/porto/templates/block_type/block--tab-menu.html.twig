@@ -1,0 +1,27 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  <section class="section section-default">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">          
+          <div class="tabs tabs-bottom tabs-center tabs-simple">
+            <ul class="nav nav-tabs">
+              {{content.field_header_tab}}
+            </ul>
+            <div class="tab-content">
+              {{content.field_content_tab}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ title_suffix }}
+</div>

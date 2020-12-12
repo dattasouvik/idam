@@ -1,0 +1,24 @@
+name: Porto Restaurant
+type: theme
+base theme: classy
+description: 'Responsive Drupal 8 Theme by Arrowhitech JSC.'
+package: Custom
+# version: VERSION
+# core: 8.x
+libraries:
+  - porto/global-styling
+regions:
+  header: 'Header'
+  nav_top: 'Nav Top'
+  slogan_top: 'Slogan Top'
+  main_navigaton : 'Main Navigation'
+  slide_show: 'Slide Show'
+  content: 'Content'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
+
+# Information added by Drupal.org packaging script on 2016-09-07
+version: '4.0'
+core: '8.x'
+project: 'drupal'
+datestamp: 1473276445

@@ -1,0 +1,27 @@
+global-styling:
+  version: 8.x
+  css:
+    base:
+      assets/css/font-awesome/font-awesome.css: {}
+      assets/css/bootstrap.css: {}
+      assets/css/vegas.min.css: {}
+      assets/css/pikaday.css: {}
+      assets/css/slick-theme.css: {}
+      assets/css/slick.css: {}
+      assets/css/style.css: {}
+      assets/css/responsive.css: {}
+  js:
+     assets/js/jquery-3.3.1.js: {}
+     assets/js/slick.min.js: {}
+     assets/js/vegas.min.js: {}
+     assets/js/pace.js: {}
+     assets/js/bootstrap.bundle.js: {}
+     assets/js/pikaday.js: {}
+     assets/js/main.js: {}
+     
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

@@ -1,0 +1,260 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+html .slider-container .tp-caption-overlay-primary,
+.slider-container .tp-caption-overlay-opacity {
+  background: none;
+}
+#headerBookNow ul.dropdown-menu {
+  display: none !important;
+}
+#headerBookNow > a:after {
+  display: none;
+}
+#header .header-body .header-top .text-color-tertiary {
+  width: 50%;
+}
+#header .header-body .header-top .text-color-tertiary p {
+  color: #d1e7e7;
+}
+#header .header-body .header-container .header-row .header-column .header-row .header-nav .header-nav-main nav > #mainNav > .dropdown-full-color.dropdown-secondary .is-active{
+	color: #e09b23;
+}
+html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary:hover > a.is-active{
+	background: #e09b23;
+    color: #ffffff!important;
+}
+.thumb-info-side-image .thumb-info-caption .thumb-info-caption-text {
+  padding: 17px;
+}
+#contact-message-feedback-form input{
+	width: 100%;
+}
+#edit-message-0-value{
+	height: 80px;
+}
+input:focus, textarea:focus{
+	outline: none;
+}
+form .form-required:after {
+    vertical-align: unset;
+    background-image: unset;
+    content: '*';
+}
+#contact-message-feedback-form #edit-submit{
+	width: auto;
+    color: #ffffff;
+    background-color: #e09b23;
+    border-color: #e09b23 #e09b23 #b67d1a;
+    border: 1px solid transparent;
+}
+
+input#edit-submit:hover {
+    color: #fff;
+    border-color: #e3a539 #e3a539 #cd8c1d;
+    background-color: #e3a539;
+}
+.md-slider-bullet-2 .md-bullets{
+	display: none;
+}
+.p-none .row{
+  margin: 0px;
+}
+.col-half-section.col-half-section-right {
+  margin-right: 15px;
+}
+.col-half-section{
+  margin-left: 15px;
+}
+.messages.messages--status {
+  margin: 30px 110px;
+}
+a.phone-number {
+  color: #999;
+  text-decoration: none;
+}
+.tabs ul.tabs a {
+  color: #e09b23;
+  border-style: solid;
+  border-color: #EEE;
+  border-width: 3px 1px 0 1px;
+  background: #F4F4F4;
+  border-radius: 5px 5px 0 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 10px 15px;
+  cursor: pointer !important;
+  margin-right: 1px;
+  display: inline-block;
+}
+.tabs ul.tabs a.is-active, .tabs ul.tabs a:hover {
+  border-top-color: #e09b23;
+  background: #FFF;
+}
+.tabs {
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.tabs ul.tabs {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #EEE;
+  border-width: 0 0 1px 0;
+  background: none;
+}
+.tabs ul.tabs>li {
+  border: none;
+  margin: 0 0 -1px 0;
+  padding: 0;
+}
+.md-arrow-left:before {
+  content: '\e824';
+  font-family: "revicons";
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+}
+.md-arrow-right:before {
+  content: '\e825';
+  font-family: "revicons";
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+}
+.md-arrow-left, .md-arrow-right{ 
+  background: unset;
+  background: rgba(0,0,0,0.5);
+}
+.md-arrow-left:hover, .md-arrow-right:hover{
+  background: #000;
+  color: #fff;
+}
+.context-contact .main >.container{
+  width: 100%;
+  padding: 0;
+}
+.p-xlg {
+  padding: 0px!important;
+}
+.user-login-form,
+.user-pass,
+.user-register-form .form-email,
+.user-register-form .form-text{
+  max-width: 400px;
+}
+
+.user-login-form .button,
+.user-pass .button,
+.user-register-form .button{
+  color: #fff;
+  background-color: #e09b23;
+  border-color: #e09b23 #e09b23 #e09b23;
+}
+.user-login-form .button:hover,
+.user-pass .button:hover,
+.user-register-form .button:hover{
+  color: #fff;
+  border-color: #e09b23 #e09b23 #e09b23;
+  background-color: #e09b23;
+}
+.button{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.form-email, .form-text{
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+@media (max-width: 991px){
+  .col-half-section {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+#send-message .field__label {
+  display: none;
+}
+#send-message #edit-actions input{
+  color: #ffffff;
+  background-color: #e09b23;
+  border-color: #e09b23 #e09b23 #b67d1a;
+}
+#send-message #edit-actions input:hover{
+  opacity: 0.7;
+}
+#send-message textarea{
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-textarea-wrapper textarea {
+    padding: 6px 12px;
+}
+.ui-dialog .ui-dialog-titlebar-close:after{
+    content: '\f00d';
+    font-family: 'FontAwesome';
+}
+.md-objects .md-object.md-layer-2-3-3 a,
+.md-objects .md-object.md-layer-2-4-3 a {
+    line-height: 16px!important;
+}
+#block-porto-content table.webform-results-table,
+#block-porto-content table.views-table {
+    width: 100%;
+}
+#block-porto-content table.webform-results-table tr th,
+#block-porto-content table.webform-results-table tr td,
+#block-porto-content table.views-table tr th,
+#block-porto-content table.views-table tr td{
+    padding: 5px 20px;
+}
+#block-porto-content table.webform-results-table tr th .tablesort,
+#block-porto-content table.views-table tr th .tablesort{
+    background-position: 0px 2px;
+}
+.ct-rating .description .empty{
+    display: none;
+}
+.product-ratings .description {
+    display: none;
+}

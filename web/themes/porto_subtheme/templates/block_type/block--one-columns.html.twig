@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  <section class="section section-default mb-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 center">
+          {{content.field_top_columns}}
+          {{ content.body }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ title_suffix }}
+</div>

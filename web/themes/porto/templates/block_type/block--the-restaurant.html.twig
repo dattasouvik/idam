@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }} 
+  <section class="parallax section section-text-light section-parallax section-center mt-none mb-xl" data-plugin-parallax data-plugin-options='{"speed": 1.5}' data-image-src="{{ content.field_background_about | render | striptags | trim }}">
+    <div class="row">
+      <div class="col-md-12 center">
+        {{ content.body }}
+      </div>
+    </div>
+  </section>
+  {{ title_suffix }}
+</div>
